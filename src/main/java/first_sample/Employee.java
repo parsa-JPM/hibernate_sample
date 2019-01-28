@@ -1,3 +1,5 @@
+package first_sample;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;

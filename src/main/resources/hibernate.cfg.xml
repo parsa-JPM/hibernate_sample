@@ -7,7 +7,7 @@
         <property name="connection.url">jdbc:mysql://localhost/jdbc_test</property>
         <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">1234</property>
+        <property name="connection.password">parsa1376</property>
         <!--it's for make tables automatically-->
         <property name="hbm2ddl.auto">update</property>
     </session-factory>
