@@ -26,8 +26,7 @@ public class Client {
 //        }
 
 
-//        Query q = session.createQuery("from Employee where id = 3");
-        Query q = session.createQuery("select sum(id) from Employee");
+        Query q = session.createQuery("from Employee where id = 3");
         List<Employee> employees = q.list();
 
         for (Employee employee : employees) {
