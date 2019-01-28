@@ -1,10 +1,7 @@
-package relationships;
+package relationships.one_to_many;
 
 
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.JoinColumn;
-import javax.persistence.ManyToOne;
+import javax.persistence.*;
 
 @Entity
 public class Labtop {
@@ -13,8 +10,7 @@ public class Labtop {
     private String lname;
 
     @ManyToOne
-    @JoinColumn(name = "rollno")
-    private Student std;
+    private Student student;
 
     public int getLid() {
         return lid;
@@ -32,11 +28,11 @@ public class Labtop {
         this.lname = lname;
     }
 
-    public Student getStd() {
-        return std;
+    public Student getStudent() {
+        return student;
     }
 
-    public void setStd(Student std) {
-        this.std = std;
+    public void setStudent(Student student) {
+        this.student = student;
     }
 }

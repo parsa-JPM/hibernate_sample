@@ -1,4 +1,4 @@
-package relationships;
+package relationships.one_to_many;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -12,8 +12,9 @@ public class Student {
     private String name;
     private int mark;
 
-    @OneToMany(mappedBy = "std")
-    private List<Labtop> labtops = new ArrayList<Labtop>();
+
+    @OneToMany(mappedBy = "student")
+    private List<Labtop> labtop = new ArrayList<>();
 
     public int getRollno() {
         return rollno;
@@ -39,11 +40,12 @@ public class Student {
         this.mark = mark;
     }
 
-    public List<Labtop> getLabtops() {
-        return labtops;
+
+    public List<Labtop> getLabtop() {
+        return labtop;
     }
 
-    public void setLabtops(List<Labtop> labtops) {
-        this.labtops = labtops;
+    public void setLabtop(List<Labtop> labtop) {
+        this.labtop = labtop;
     }
 }
